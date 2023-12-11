@@ -1,0 +1,117 @@
+/* Vending Machine container */
+.vending-machine {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Change component */
+.change {
+  text-align: center;
+}
+
+.drop-change-btn {
+  margin: 5px;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.drop-change-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.change-list {
+  list-style: none;
+  padding: 0;
+}
+
+.change-list-item {
+  margin-bottom: 5px;
+}
+
+/* Coiner component */
+.coiner {
+  text-align: center;
+}
+
+.coins-header {
+  font-size: larger;
+}
+
+.coin-btn {
+  margin: 5px;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  /* Set border-radius to 50% for a full circle */
+  width: 70px;
+  /* Set equal width and height for a perfect circle */
+  height: 70px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+/* Ensure text inside the circle stays centered */
+.coin-btn span {
+  display: inline-block;
+  line-height: 1;
+}
+
+.coin-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.deposit {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Fridge component */
+.fridge {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product {
+  width: 200px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.product-img {
+  margin-bottom: 10px;
+}
+
+.buy-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.buy-btn:hover {
+  background-color: #45a049;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .fridge {
+    justify-content: center;
+  }
+
+  .product {
+    width: 150px;
+  }
+}
